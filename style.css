@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+html,body {
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+.container{
+  font-family: 'Raleway', sans-serif;
+  height: 100%;
+  width: 100%;
+  background-color: #ecf0f1;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.nav{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  background-color: #2980b9;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  transition-duration: 0.2s;
+  border-bottom: 2px solid transparent;
+}
+
+a:hover{
+  border-bottom: 2px solid #ecf0f1;
+  letter-spacing: 2px;
+}
+
+.main{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  flex-grow: 1;
+  overflow: auto;
+}
+
+.mainCards{
+  overflow: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.callToAction{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  border: 10px dashed #2980b9 ;
+  padding: 30px;
+}
+
+#learnLink{
+  color: #cc2e56;
+  font-size: 25px;
+}
+
+.panel{
+  width: 80%;
+  transition-duration: 0.3s;
+  border-left: 30px solid #bdc3c7;
+  padding-left: 15px;
+}
+
+.panel:hover{
+  box-shadow: 10px 10px 10px black;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 20px;
+}
+
+.flashcard{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 150px;
+  border: 5px solid #b3b8bc;
+  border-radius: 15px;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  transition-duration: 0.5s;
+}
+
+.flashContainer:hover .flashcard {
+  transform: rotateY(180deg);
+}
+
+.flashContainer{
+  width: 250px;
+  height: 150px;
+  margin: 30px;
+}
+
+.back, .front{
+  backface-visibility: hidden;
+}
+
+.back{
+  transform: rotateY(180deg);
+}
+
+form{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.question{
+  margin-top: 10px;
+}
+
+input[type="submit"]{
+  margin: 30px;
+}
+
+.correct{
+  background-color: #61f57e;
+}
+
+.incorrect{
+  background-color: #f56161;
+}
+
+hr{
+  width: 100vw;
+  box-shadow: 0px 0px 5px black;
+}
+
+.testPanel{
+  border-left: 30px solid #dec48c;
+}
+
+form{
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+/* Primary Color: #3498db (Flat Blue)
+
+Use for primary elements and call-to-action buttons.
+Secondary Color: #2ecc71 (Emerald Green)
+
+Suitable for accents and secondary elements.
+Background Color: #ecf0f1 (Clouds)
+
+A light neutral color for backgrounds.
+Text Color: #333333 (Dark Gray)
+
+Dark enough for readability on a light background.
+Accent Color: #e74c3c (Alizarin)
+
+Use sparingly for important highlights or alerts.
+Neutral Color: #bdc3c7 (Silver)
+
+A mid-tone neutral color for borders or dividers.
+Link Color: #2980b9 (Belize Hole)
+
+Use a slightly darker shade for links to provide contrast.
+Hover Color: #2c3e50 (Midnight Blue)
+
+A subtle color for hover effects on links or buttons. */
